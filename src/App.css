@@ -1,38 +1,132 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #eeeeee;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+}
+
+header.scrolled {
+  background-color: rgb(41, 41, 41);
+}
+
+#nav{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: right;
+}
+
+header #nav a{
+  transition: color 0.5s ease-in-out;
+}
+
+header.scrolled #nav a{
+  color: #fff;
+}
+
+#logo{
+  margin-left: 10px;
+}
+
+#logo img{
+  height: 50px;
+}
+
+#nav ul{
+  display: flex;
+  list-style: none;
+}
+
+#nav li a{
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainText{
+  font-size: 20px;
+  font-weight: 600;
+  color: #1d1d1d;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#mainText button{
+  margin-top: 20px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#mainText button:hover{
+  box-shadow: #1d1d1d 0px 5px 10px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#DownloadDesktopBTN{
+  background-color: #1d1d1d;
+  margin-right: 5px;
+}
+
+#HowItWorksBTN{
+  background-color: #54CEE3;
+  margin-left: 5px;
+}
+
+#about{
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #1d1d1d;
 }
 
-.App-link {
-  color: #61dafb;
+.aboutText{
+  font-size: 20px;
+  color: #fff;
+  width: 750px;
+}
+.aboutText h2{
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutText p{
+  margin: 20px;
+}
+
+#WhyLambLink{
+  margin: 75px;
+
+}
+
+
+#WhyLambLink p{
+  text-align: left;
 }
