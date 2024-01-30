@@ -45,10 +45,6 @@ header.scrolled #nav a{
   margin-left: 10px;
 }
 
-#logo img{
-  height: 50px;
-}
-
 #nav ul{
   display: flex;
   list-style: none;
@@ -123,10 +119,77 @@ main{
 
 #WhyLambLink{
   margin: 75px;
-
 }
-
 
 #WhyLambLink p{
   text-align: left;
+}
+
+#register{
+  width: 100%;
+  height: 100vh;
+  background-color: #54CEE3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%238b96cc' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23eeeeee' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23737ba5' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23eee6d3' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%235d6280' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23eddeb9' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23474a5d' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ebd79e' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%2331323b' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23e7cf83' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%231d1d1d' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23e3c868' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+}
+
+#registerForm{
+  width: 40vw;
+  height: 100vh;
+  background: #eeeeee;
+  color: #1d1d1d;
+  background-image:url(img/icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 105%;
+  background-blend-mode:soft-light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#registerFormPlacement{
+  width: 100%;
+}
+
+#registerForm h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+#registerForm label{
+  margin-left: 10px;
+}
+#registerForm form{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 75px 5vw;
+}
+
+#registerForm form input{
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#registerForm form input:focus{
+  box-shadow: #1d1d1d 0px 5px 10px 0px;
+}
+
+#registerSubmit{
+  box-shadow:  10px 10px 20px #cacaca
+}
+
+#registerSubmit:hover{
+  box-shadow:  8px 8px 20px #cacaca,
+           -8px -8px 20px #ffffff;
+  cursor: pointer;
+  color: #000000;
 }
