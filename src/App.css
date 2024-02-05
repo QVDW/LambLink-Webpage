@@ -202,3 +202,43 @@ main{
   cursor: pointer;
   color: #000000;
 }
+
+#FAQ{
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  flex-direction: column;
+}
+
+#FAQ h1{
+  font-size: 75px;
+  color: #1d1d1d;
+}
+
+.FAQtab{
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  border: #000000 1px solid;
+  width: 50vw;
+  border-radius: 20px;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.FAQflex{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.content {
+  display: none;
+  margin-top: 20px;
+}
