@@ -6,6 +6,7 @@ import About from './About';
 import Tutorials from './Tutorials';
 import Login from './Login';
 import Register from './Register';
+import Error from './Error';
 
 import './App.css';
 import Logo from './img/icon.png';
@@ -34,6 +35,7 @@ function App() {
                     <Route path="tutorials" element={<Tutorials />} />
                     <Route path="login" element={<Login />} />
                     <Route path="register" element={<Register />} />
+                    <Route path="*" element={<Error />} />
                 </Routes>
             </main>
         </BrowserRouter>
