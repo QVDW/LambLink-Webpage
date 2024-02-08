@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="register">
+            <div id="registerIMG">
+                <img src="img/Register.png" alt="register">
+            </div>
+            <div id="registerForm">
+                <div id="registerFormPlacement">
+            <h1>Register</h1>
+            <form action="register.php" method="post">
+                <label for="username">Username*</label>
+                <input type="text" name="username" placeholder="Username" required>
+                <label for="email">Email*</label>
+                <input type="email" name="email" placeholder="Email" required>
+                <label for="password">Password*</label>
+                <input type="password" name="password" placeholder="Password" required>
+                <label for="repeatPassword">Repeat password*</label>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Register" id="registerSubmit">
+            </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

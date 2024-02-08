@@ -1,84 +1,44 @@
-window.addEventListener("scroll", function() {
-    var header = document.querySelector("header");
-    header.classList.toggle("scrolled", window.scrollY > 0);
-});
+import React, { useState } from 'react';
 
-const FAQ = () => {
+import RegisterImg from './img/Register.png';
+import { Link } from 'react-router-dom';
+
+const Register = () => {
+    const [formData, setFormData] = useState({
+        username: '',
+        password: '',
+    });
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle form submission here
+        console.log(formData);
+    };
+
     return (
-        <div id="FAQ">
-            <h1>FAQ</h1>
-            <div class="FAQtab">
-                <div class="FAQflex">
-                <h2>What is LambLink?</h2>
-                <div class="arrow"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#0F0F0F"/>
-                    </svg></div></div>
-                <div class="content" display="none">
-                    <p>LambLink is a modern FTP client that aims to bring FTP into the modern era</p>
-                </div>
+        <div id="register">
+            <div id="registerIMG">
+                <img src={RegisterImg} alt="Register" />
             </div>
-            <div class="FAQtab">
-                <div class="FAQflex">
-                <h2>What is LambLink?</h2>
-                <div class="arrow"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#0F0F0F"/>
-                    </svg></div></div>
-                <div class="content" display="none">
-                    <p>LambLink is a modern FTP client that aims to bring FTP into the modern era</p>
-                </div>
-            </div>
-            <div class="FAQtab">
-                <div class="FAQflex">
-                <h2>What is LambLink?</h2>
-                <div class="arrow"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#0F0F0F"/>
-                    </svg></div></div>
-                <div class="content" display="none">
-                    <p>LambLink is a modern FTP client that aims to bring FTP into the modern era</p>
-                </div>
-            </div>
-            <div class="FAQtab">
-                <div class="FAQflex">
-                <h2>What is LambLink?</h2>
-                <div class="arrow"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#0F0F0F"/>
-                    </svg></div></div>
-                <div class="content" display="none">
-                    <p>LambLink is a modern FTP client that aims to bring FTP into the modern era</p>
-                </div>
-            </div>
-            <div class="FAQtab">
-                <div class="FAQflex">
-                <h2>What is LambLink?</h2>
-                <div class="arrow"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#0F0F0F"/>
-                    </svg></div></div>
-                <div class="content" display="none">
-                    <p>LambLink is a modern FTP client that aims to bring FTP into the modern era</p>
-                </div>
-            </div>
-            <div class="FAQtab">
-                <div class="FAQflex">
-                <h2>What is LambLink?</h2>
-                <div class="arrow"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#0F0F0F"/>
-                    </svg></div></div>
-                <div class="content" display="none">
-                    <p>LambLink is a modern FTP client that aims to bring FTP into the modern era</p>
-                </div>
-            </div>
-            <div class="FAQtab">
-                <div class="FAQflex">
-                <h2>What is LambLink?</h2>
-                <div class="arrow"><svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7.82054 20.7313C8.21107 21.1218 8.84423 21.1218 9.23476 20.7313L15.8792 14.0868C17.0505 12.9155 17.0508 11.0167 15.88 9.84497L9.3097 3.26958C8.91918 2.87905 8.28601 2.87905 7.89549 3.26958C7.50497 3.6601 7.50497 4.29327 7.89549 4.68379L14.4675 11.2558C14.8581 11.6464 14.8581 12.2795 14.4675 12.67L7.82054 19.317C7.43002 19.7076 7.43002 20.3407 7.82054 20.7313Z" fill="#0F0F0F"/>
-                    </svg></div></div>
-                <div class="content" display="none">
-                    <p>LambLink is a modern FTP client that aims to bring FTP into the modern era</p>
+            <div id="registerForm">
+                <div id="registerFormPlacement">
+                    <h1>Login</h1>
+                    <form onSubmit={handleSubmit}>
+                        <label htmlFor="username">Username*</label>
+                        <input type="text" name="username" placeholder="Username" required onChange={handleChange} />
+                        <label htmlFor="password">Password*</label>
+                        <input type="password" name="password" placeholder="Password" required onChange={handleChange} />
+                        <input type="submit" value="Register" id="registerSubmit" />
+                        <Link to="/register">Don't have an account? Register here.</Link>
+                    </form>
                 </div>
             </div>
         </div>
     );
 }
 
-export default FAQ;
+export default Register;
