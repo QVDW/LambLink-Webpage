@@ -3,11 +3,11 @@ import React, { useState } from 'react';
 const FAQ = () => {
     const [activeIndex, setActiveIndex] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
-    const [isRotated, setIsRotated] = useState(null); // Changed from boolean to null
+    const [isRotated, setIsRotated] = useState(null); 
 
     const handleClick = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
-        setIsRotated(isRotated === index ? null : index); // Added this line
+        setIsRotated(isRotated === index ? null : index);
     };
 
     const handleSearchChange = (event) => {
