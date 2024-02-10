@@ -255,6 +255,10 @@ main{
   cursor: pointer;
 }
 
+.arrow.rotated {
+  transform: rotate(90deg);
+}
+
 .content {
   margin-top: 20px;
   transition: 0.5s ease-out;
