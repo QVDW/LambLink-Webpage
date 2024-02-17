@@ -20,8 +20,8 @@ function App() {
                 <div id="nav">
                     <ul>
                         <li><NavLink to="FAQ">FAQ</NavLink></li>
-                        <li><NavLink to="Tutorials">Tutorials</NavLink></li>
-                        <li><NavLink to="Login">Login</NavLink></li>
+                        {/*<li><NavLink to="Tutorials">Tutorials</NavLink></li>
+                        <li><NavLink to="Login">Login</NavLink></li>}*/}
                     </ul>
                 </div>
             </header>
@@ -29,9 +29,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="faq" element={<FAQ />} />
-                    <Route path="tutorials" element={<Tutorials />} />
+                    {/*<Route path="tutorials" element={<Tutorials />} />
                     <Route path="login" element={<Login />} />
-                    <Route path="register" element={<Register />} />
+                    <Route path="register" element={<Register />} />*/}
                     <Route path="*" element={<Error />} />
                 </Routes>
             </routes>

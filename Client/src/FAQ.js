@@ -16,32 +16,36 @@ const FAQ = () => {
 
     const faqs = [
         {
-            question: 'First question?',
-            answer: 'First answer.'
+            question: "Why Lamblink?",
+            answer: "Lamblink simplifies FTP server connections with its intuitive interface, allowing users to save and connect to servers effortlessly. It also enables users to create custom FTP connections on their PCs, streamlining workflow with features like drag-and-drop file transfers"
         },
         {
-            question: 'Second question?',
-            answer: 'Second answer.'
+            question: "How do I add a new FTP server to Lamblink?",
+            answer: "To add a new FTP server to Lamblink, simply navigate to the + symbol within the interface, where you can input the servers details such as hostname, port, username, and password."
         },
         {
-            question: 'Third question?',
-            answer: 'Third answer.'
+            question: "Can I customize the appearance or layout of the Lamblink interface?",
+            answer: "At this time, Lamblink's interface is designed to provide a user-friendly and intuitive experience without customization options for appearance or layout."
         },
         {
-            question: 'Fourth question?',
-            answer: 'Fourth answer.'
+            question: "Is Lamblink compatible with all operating systems?",
+            answer: "Yes, Lamblink is compatible with both Windows and macOS operating systems."
         },
         {
-            question: 'Fifth question?',
-            answer: 'Fifth answer.'
+            question: "Is there a limit to the number of FTP servers I can save in Lamblink?",
+            answer: "There is a limit of 10 servers that can be saved in Lamblink. If you need to save more than 10 servers, there is an option to upgrade to the premium version of Lamblink."
         },
         {
-            question: 'Sixth question?',
-            answer: 'Sixth answer.'
+            question: "Are there any tutorials available to help me get started with Lamblink?",
+            answer: "Yes, Lamblink provides comprehensive tutorials and documentation to assist users in getting started and making the most of the software's features."
         },
         {
-            question: 'Seventh question?',
-            answer: 'Seventh answer.'
+            question: "Does Lamblink offer any integrations with other software or services?",
+            answer: "At this time, Lamblink does not offer direct integrations with other software or services."
+        },
+        {
+            question: "Is Lamblink available in languages other than English?",
+            answer: "Lamblink is currently only available in English, with potential plans for additional language support in the future."
         }
     ];
 
